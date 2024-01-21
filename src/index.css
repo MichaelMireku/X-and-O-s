@@ -11,7 +11,6 @@
   --light-grey: rgb(221, 221, 221);
 }
 
-
 *,
 *::before,
 *::after {
@@ -22,19 +21,22 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   min-height: 100%;
 }
+
 body {
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   overflow-y: scroll;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   height: 100vh;
 }
+
 body::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+  display: none;
 }
 
 img,
@@ -45,6 +47,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 img {
   display: block;
 }
@@ -55,12 +58,14 @@ li {
   padding: 0;
   margin: 0;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -84,27 +89,28 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 1rem; /* Adjusted padding for better mobile appearance */
 }
+
 h1 {
   font-family: var(--game-font);
-  color: var(--dark-purple);  
+  color: var(--dark-purple);
   font-size: 6vw;
   letter-spacing: 1px;
-  padding: 1rem 1rem 6rem 1rem;
+  padding: 1rem; /* Adjusted padding for better mobile appearance */
+  text-align: center; /* Center align text on mobile */
 }
+
 .game-board {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
-  font-size: 30px;
+  padding: 15px; /* Adjusted padding for better mobile appearance */
+  font-size: 5vw; /* Adjusted font size for better mobile appearance */
   font-weight: bold;
   color: var(--white);
-  transition:
-    margin-top 0.3s ease,
-    margin-left 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: margin-top 0.3s ease, margin-left 0.3s ease, box-shadow 0.3s ease;
   background: #d8b013;
 }
 .game-section {
